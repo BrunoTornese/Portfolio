@@ -1,0 +1,44 @@
+---
+const personalImageAlt = "Bruno Tornese";
+import Badge from "@/components/Badge.astro";
+import LinkedInIcon from "@/components/icons/LinkedIn.astro";
+import GitHub from "./icons/GitHub.astro";
+import SocialPill from "@/components/SocialPill.astro";
+---
+
+<div class="max-w-xl">
+  <div class="flex gap-4 mb-4">
+    <img
+      class="rounded-full shadow-lg size-16"
+      src="/me.png"
+      alt={personalImageAlt}
+    />
+
+    <Badge>Disponible para trabajar</Badge>
+  </div>
+</div>
+<h1
+  class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
+>
+  Hola!, soy Bruno
+</h1>
+<p
+  class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
+>
+  Soy un <strong>
+    Programador Full Stack M.E.R.N. con conocimientos en Python, Django y otros
+    frameworks</strong
+  > resido en Benalmádena, Malaga, España 🇪🇸. Especializado en el desarrollo de aplicaciones
+  web.
+</p>
+
+<nav class="flex flex-wrap gap-4 mt-8">
+  <SocialPill href="https://github.com/BrunoTornese">
+    <GitHub class="size-4" />
+    GitHub
+  </SocialPill>
+  <SocialPill href="https://www.linkedin.com/in/bruno-tornese/">
+    <LinkedInIcon class="size-4" />
+    LinkedIn
+  </SocialPill>
+</nav>
