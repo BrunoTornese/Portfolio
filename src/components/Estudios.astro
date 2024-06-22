@@ -1,0 +1,34 @@
+---
+import ExperienceItem from "./EstudiosItem.astro";
+const ESTUDIOS = [
+  {
+    date: "2023 jul-2024 abrl",
+    title: "Programador Full Stack M.E.R.N",
+    company: "Rolling Code",
+    description:
+      "En este curso, adquirí un dominio exhaustivo del stack M.E.R.N. (MongoDB, Express.js, React.js y Node.js), lo que me permitió desarrollar aplicaciones web robustas y eficientes. Además, profundicé en el uso de herramientas esenciales para la gestión de proyectos y la colaboración en equipo, como Trello, aplicando la metodología SCRUM, GitHub para el control de versiones y Slack para la comunicación y coordinación del equipo. Estas herramientas complementaron mi formación técnica y mejoraron mis habilidades en la gestión y organización de proyectos.",
+
+    certificado:
+      "https://certs.rollingcodeschool.com//YnJ1bm9sdWNoaTIwMDNAZ21haWwuY29t-1712776589964-1.png",
+  },
+  {
+    date: "2022 abrl-2022 jul",
+    title: "Programador Python",
+    company: "CoderHouse",
+    description:
+      "En este curso, inicié desde los fundamentos de la programación hasta el desarrollo avanzado de aplicaciones web con Django, enfocándome en el backend. Adquirí habilidades en la creación de modelos de datos complejos, implementación de lógica de negocio con vistas y controladores, y optimización del rendimiento de aplicaciones web. Estoy listo para aplicar estas habilidades en proyectos profesionales que requieran soluciones eficientes y escalables en Python y Django.",
+    certificado:
+      "https://www.coderhouse.com/es/certificados/62fffc852dd41d0024dd51ba",
+  },
+];
+---
+
+<ol class="relative mt-16">
+  {
+    ESTUDIOS.map((estudios) => (
+      <li class="">
+        <ExperienceItem {...estudios} />
+      </li>
+    ))
+  }
+</ol>
