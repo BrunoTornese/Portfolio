@@ -13,6 +13,8 @@ import HTML from "./icons/HTML.astro";
 import Bootstrarp from "./icons/Bootstrap.astro";
 import ExpressJs from "./icons/ExpressJs.astro";
 import TypeScript from "./icons/TypeScript.astro";
+import { title } from "process";
+import NextJs from "./icons/NextJs.astro";
 
 const TAGS = {
   REACT: {
@@ -70,6 +72,11 @@ const TAGS = {
     class: "bg-black textwhite",
     icon: TypeScript,
   },
+  NEXTJS: {
+    name: "NextJS",
+    class: "bg-black text-white",
+    icon: NextJs,
+  },
 };
 
 const PROJECTS = [
@@ -101,6 +108,14 @@ const PROJECTS = [
     github: "https://github.com/BrunoTornese/Bot-discord",
     image: "/projects/botDiscord.webp",
     tags: [TAGS.PYTHON],
+  },
+  {
+    title: "Libreria",
+    description:
+      "Este proyecto es una demostración de el uso de mis conocimientos en el desarrollo frontend utilizando Tailwind CSS, React, Next.js y TypeScript. Este proyecto de una librería esta desarrollado y diseñada específicamente para demostrar cómo puedo integrar estas tecnologías de manera eficiente y efectiva.",
+    github: "https://github.com/BrunoTornese/libreria",
+    image: "/projects/Libreria.webp",
+    tags: [TAGS.TYPESCRIPT, TAGS.REACT, TAGS.NEXTJS, TAGS.BOOTSTRAP],
   },
   {
     title: "Pruebas tecnicas varias",
